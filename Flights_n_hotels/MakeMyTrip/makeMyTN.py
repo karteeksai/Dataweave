@@ -227,7 +227,7 @@ def crawl():
         #driver.implicitly_wait(30)
         #url = "http://fph.makemytrip.com/site/fph/search?isHotelCity=true&frcity=Goa%2C+India+%28GOI%29&fCountryFrom=IN&tocity=Hyderabad%2C+India+%28HYD%29&fCountryTo=IN&city=Hyderabad%2C+India+%28HYD%29&hCountry=IN&f_sdate=12312013&f_edate=01022014&sdate=12312013&edate=01022014&trip=R&tripDup=R&hguest=1&fguest=1_0_0&curr=INR&adultAgeCount1=true&childAgeCount1=true&infantCount1=true"
         driver.get(url)
-        time.sleep(5)
+        #time.sleep(5)
         #print driver.page_source
         try:
             check = driver.find_element_by_xpath(config.NO_INFO_PAGE_SELECTOR)
@@ -358,4 +358,4 @@ def make_csv(list,file_name):
 
 crawl()
 
-print 'done...'
+print 'done crawling..........'
